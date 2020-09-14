@@ -63,12 +63,19 @@
                         <?php endif; ?>
                     </div>
                 </div>
-                
+                <div id="" class="col-sm-4 col-xs-12">
+                    <h2 >AA</h2>
+                    <ul  class='pb-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, voluptatibus eligendi repudiandae enim fuga dolore reiciendis ipsum inventore eveniet harum iusto cumque debitis aliquam repellat necessitatibus consectetur ab quae nihil?</ul>
+                    <h2>BB</h2>
+                    <ul class='pb-5'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae incidunt eveniet quam commodi aliquam nam animi soluta reprehenderit alias quidem deleniti sunt, perferendis voluptates neque dolor ab pariatur, optio consectetur.</ul>
+                </div>
             </div>
 
             
         </div>  
-       
+        <div class="bg-dark mt-2 p-3 text-light">
+            <h1>FOOTER</h1>
+        </div>
     </div>
 </body>
 </html>
