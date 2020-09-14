@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <div class=" wrapper">
         <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -46,6 +46,28 @@
                 </form>
             </div>
         </nav>
+        <div class="container-fluid mt-1 bg-light pt-3">
+
+            <div  class="row">
+                <div class=" col-sm-8  col-xs-12">
+
+                    <div class="row">
+                        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                        <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 pl-5">
+                            <h1><?php the_title(); ?></h1>
+                            <h4>Posted on <?php the_time('F jS, Y') ?></h4>
+                            <p><?php the_content(__('(more...)')); ?></p>
+                        </div>
+                        <?php endwhile; else: ?>
+                            <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+        </div>  
        
     </div>
 </body>
